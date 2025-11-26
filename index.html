@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Marmitana</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <img src="src/images/Marmitana.png" id="nav_logo">
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#aboutme">Sobre mim</a>
+                </li>
+            </ul>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#aboutme">Sobre mim</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main id="content">
+        <section id="home">
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class="title">
+                    O sabor que vai até
+                    <span>você</span>
+                </h1>
+
+                <p class="description">
+                    Marmitana é a solução perfeita para quem gosta de refeições
+                    saudáveis, deliciosas e práticas, mas não tem tempo de prepará-las.
+                    Combinamos pacotes mensais, para que você não precise se preocupar em
+                    cozinhar todos os dias. Realizamos entregas rápidas diretamente na sua
+                    casa ou local de trabalho, garantindo que você desfrute de pratos
+                    frescos e nutritivos sem complicações.
+                </p>
+
+                <div class="social-media-buttons">
+                    <a href="https://wa.me/5513991845634">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="banner">
+                <img src="src/images/hero.png" alt="">
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2 class="section-title">Cardápio</h2>
+            <h3 class="section-subtitle">Alguns exemplos de pacotes que oferecemos</h3>
+            <h4>Valores a combinar</h4>
+
+            <div id="dishes">
+                <div class="dish">
+                    <img src="src/images/strogonoff.jpeg" class="dish-image" alt="Lasanha à Bolonhesa">
+
+                    <h3 class="dish-title">
+                        Strogonoff de frango
+                    </h3>
+
+                    <span class="dish-description">
+                        Frango macio em molho cremoso, servido com arroz e batata.
+                    </span>
+
+                    <div class="dish-price">
+                        <button class="btn-default" id="btn-personalizar">
+                            Personalize o seu pedido
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <img src="src/images/carne.jpeg" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                        Carne com legumes
+                    </h3>
+
+                    <span class="dish-description">
+                        Carne suculenta salteada com legumes frescos e temperos naturais.
+                    </span>
+
+                    <div class="dish-price">
+                        <button class="btn-default-2">
+                            <a href="https://wa.me/5513991845634" target="_blank">Peça pelo WhatsApp</a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <img src="src/images/salada.jpeg" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                        Salada de Alface
+                    </h3>
+
+                    <span class="dish-description">
+                        Alface crocante com tomates frescos e tempero leve.
+                    </span>
+
+                    <div class="dish-price">
+                        <button class="btn-default-2">
+                            <a href="https://wa.me/5513991845634" target="_blank">Peça pelo WhatsApp</a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <img src="src/images/macarrao.jpeg" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                        Macarrão
+                    </h3>
+
+                    <span class="dish-description">
+                        Macarrão no ponto certo com molho saboroso e toque especial.
+                    </span>
+
+                    <div class="dish-price">
+                        <button class="btn-default-2">
+                            <a href="https://wa.me/5513991845634" target="_blank">Peça pelo WhatsApp</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="personalizar-pedido" class="personalizar-container">
+                <div class="personalizar-header">
+                    <h3>Personalize seu Pedido Semanal</h3>
+                    <button id="btn-fechar-personalizar" class="btn-fechar">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <div class="dias-container">
+                    <div class="dia-selecao">
+                        <h4>Segunda-feira</h4>
+                        <div class="selects-container">
+                            <div class="select-group">
+                                <label for="prato-segunda">Selecione o Prato</label>
+                                <select id="prato-segunda">
+                                    <option value="">Escolha um prato</option>
+                                    <option value="Prato 1">Strogonoff de frango com batata rustica</option>
+                                    <option value="Prato 2">Feijoada light</option>
+                                    <option value="Prato 3">Macarrão a bolonhesa</option>
+                                    <option value="Prato 4">Frango com creme de milho</option>
+                                    <option value="Prato 5">Carne com legumes</option>
+                                    <option value="Prato 6">Frango ao molho de brócolis</option>
+                                    <option value="Prato 7">Panquecas de carne </option>
+                                    <option value="Prato 8">Lasanha a bolonhesa</option>
+                                </select>
+                            </div>
+                            <div class="select-group">
+                                <label for="complemento-segunda">Selecione o Complemento</label>
+                                <select id="complemento-segunda">
+                                    <option value="">Escolha um complemento</option>
+                                    <option value="Complemento 1">Legumes</option>
+                                    <option value="Complemento 2">Pure de batata</option>
+                                    <option value="Complemento 3">Pure de abóbora</option>
+                                    <option value="Complemento 4">Batata rustica</option>
+                                    <option value="Complemento 5">Milho</option>
+                                    <option value="Complemento 6">Ervilha</option>
+                                    <option value="Complemento 7">Salada de Alface</option>
+                                    <option value="Complemento 8">Farofa</option>
+
+
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dia-selecao">
+                        <h4>Terça-feira</h4>
+                        <div class="selects-container">
+                            <div class="select-group">
+                                <label for="prato-terca">Selecione o Prato</label>
+                                <select id="prato-terca">
+                                    <option value="">Escolha um prato</option>
+                                    <option value="Prato 1">Strogonoff de frango com batata rustica</option>
+                                    <option value="Prato 2">Feijoada light</option>
+                                    <option value="Prato 3">Macarrão a bolonhesa</option>
+                                    <option value="Prato 4">Frango com creme de milho</option>
+                                    <option value="Prato 5">Carne com legumes</option>
+                                    <option value="Prato 6">Frango ao molho de brócolis</option>
+                                    <option value="Prato 7">Panquecas de carne </option>
+                                    <option value="Prato 8">Lasanha a bolonhesa</option>
+                                </select>
+                            </div>
+                            <div class="select-group">
+                                <label for="complemento-terca">Selecione o Complemento</label>
+                                <select id="complemento-terca">
+                                    <option value="">Escolha um complemento</option>
+                                    <option value="Complemento 1">Legumes</option>
+                                    <option value="Complemento 2">Pure de batata</option>
+                                    <option value="Complemento 3">Pure de abóbora</option>
+                                    <option value="Complemento 4">Batata rustica</option>
+                                    <option value="Complemento 5">Milho</option>
+                                    <option value="Complemento 6">Ervilha</option>
+                                    <option value="Complemento 7">Salada de Alface</option>
+                                    <option value="Complemento 8">Farofa</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dia-selecao">
+                        <h4>Quarta-feira</h4>
+                        <div class="selects-container">
+                            <div class="select-group">
+                                <label for="prato-quarta">Selecione o Prato</label>
+                                <select id="prato-quarta">
+                                    <option value="">Escolha um prato</option>
+                                    <option value="Prato 1">Strogonoff de frango com batata rustica</option>
+                                    <option value="Prato 2">Feijoada light</option>
+                                    <option value="Prato 3">Macarrão a bolonhesa</option>
+                                    <option value="Prato 4">Frango com creme de milho</option>
+                                    <option value="Prato 5">Carne com legumes</option>
+                                    <option value="Prato 6">Frango ao molho de brócolis</option>
+                                    <option value="Prato 7">Panquecas de carne </option>
+                                    <option value="Prato 8">Lasanha a bolonhesa</option>
+                                </select>
+                            </div>
+                            <div class="select-group">
+                                <label for="complemento-quarta">Selecione o Complemento</label>
+                                <select id="complemento-quarta">
+                                    <option value="">Escolha um complemento</option>
+                                    <option value="Complemento 1">Legumes</option>
+                                    <option value="Complemento 2">Pure de batata</option>
+                                    <option value="Complemento 3">Pure de abóbora</option>
+                                    <option value="Complemento 4">Batata rustica</option>
+                                    <option value="Complemento 5">Milho</option>
+                                    <option value="Complemento 6">Ervilha</option>
+                                    <option value="Complemento 7">Salada de Alface</option>
+                                    <option value="Complemento 8">Farofa</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dia-selecao">
+                        <h4>Quinta-feira</h4>
+                        <div class="selects-container">
+                            <div class="select-group">
+                                <label for="prato-quinta">Selecione o Prato</label>
+                                <select id="prato-quinta">
+                                    <option value="">Escolha um prato</option>
+                                    <option value="Prato 1">Strogonoff de frango com batata rustica</option>
+                                    <option value="Prato 2">Feijoada light</option>
+                                    <option value="Prato 3">Macarrão a bolonhesa</option>
+                                    <option value="Prato 4">Frango com creme de milho</option>
+                                    <option value="Prato 5">Carne com legumes</option>
+                                    <option value="Prato 6">Frango ao molho de brócolis</option>
+                                    <option value="Prato 7">Panquecas de carne </option>
+                                    <option value="Prato 8">Lasanha a bolonhesa</option>
+                                </select>
+                            </div>
+                            <div class="select-group">
+                                <label for="complemento-quinta">Selecione o Complemento</label>
+                                <select id="complemento-quinta">
+                                    <option value="">Escolha um complemento</option>
+                                    <option value="Complemento 1">Legumes</option>
+                                    <option value="Complemento 2">Pure de batata</option>
+                                    <option value="Complemento 3">Pure de abóbora</option>
+                                    <option value="Complemento 4">Batata rustica</option>
+                                    <option value="Complemento 5">Milho</option>
+                                    <option value="Complemento 6">Ervilha</option>
+                                    <option value="Complemento 7">Salada de Alface</option>
+                                    <option value="Complemento 8">Farofa</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dia-selecao">
+                        <h4>Sexta-feira</h4>
+                        <div class="selects-container">
+                            <div class="select-group">
+                                <label for="prato-sexta">Selecione o Prato</label>
+                                <select id="prato-sexta">
+                                    <option value="">Escolha um prato</option>
+                                    <option value="Prato 1">Strogonoff de frango com batata rustica</option>
+                                    <option value="Prato 2">Feijoada light</option>
+                                    <option value="Prato 3">Macarrão a bolonhesa</option>
+                                    <option value="Prato 4">Frango com creme de milho</option>
+                                    <option value="Prato 5">Carne com legumes</option>
+                                    <option value="Prato 6">Frango ao molho de brócolis</option>
+                                    <option value="Prato 7">Panquecas de carne </option>
+                                    <option value="Prato 8">Lasanha a bolonhesa</option>
+                                </select>
+                            </div>
+                            <div class="select-group">
+                                <label for="complemento-sexta">Selecione o Complemento</label>
+                                <select id="complemento-sexta">
+                                    <option value="">Escolha um complemento</option>
+                                    <option value="Complemento 1">Legumes</option>
+                                    <option value="Complemento 2">Pure de batata</option>
+                                    <option value="Complemento 3">Pure de abóbora</option>
+                                    <option value="Complemento 4">Batata rustica</option>
+                                    <option value="Complemento 5">Milho</option>
+                                    <option value="Complemento 6">Ervilha</option>
+                                    <option value="Complemento 7">Salada de Alface</option>
+                                    <option value="Complemento 8">Farofa</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btn-finalizar-container">
+                    <button id="btn-finalizar-whatsapp" class="btn-finalizar-whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        Finalizar no WhatsApp
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <div id="testimonials_content">
+                <h2 class="section-title">
+                    Avaliações
+                </h2>
+                <h3 class="section-subtitle">
+                    O que os clientes falam sobre nós
+                </h3>
+
+                <div id="feedbacks">
+                    <div class="feedback">
+                        <img src="src/images/Kawan-avatar.jpg" class="feedback-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                Kawan Weber
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                Já comprei várias vezes e recomendo. Nunca me decepcionou, comida saborosa
+                                e de qualidade, a chefe é atenciosa e faz tudo personalizado.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feedback">
+                        <img src="src/images/Julio-avatar.jpeg" class="feedback-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                Julio Cesar
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                As marmitas têm ajudado bastante, trazendo praticidade e agilidade para o dia a dia e me
+                                dando mais tempo para dedicar às coisas que eu gosto. Além disso, são saborosas e
+                                variadas,
+                                mantendo bem o sabor da comida.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="aboutme">
+            <div id="aboutme_content">
+                <h2 class="section-title">
+                    Sobre mim
+                </h2>
+                <h3 class="section-subtitle">
+                    Por que decidi começar este negócio?
+                </h3>
+
+                <div id="text_aboutme">
+                    <div class="text">
+
+                        <div class="text-content">
+                            <p>
+                                Aprendi a cozinhar com a minha vó, que sempre fez questão de me mostrar cada passo das
+                                receitas com calma e dedicação. Com o tempo, além de aprender a preparar os pratos,
+                                desenvolvi um verdadeiro gosto pela cozinha. Passei a testar novos ingredientes,
+                                aprimorar o que ela me ensinava e descobrir meu próprio estilo culinário.<br><br>
+
+                                A ideia de trabalhar com isso surgiu de maneira natural. Dois amigos, que sempre
+                                apreciaram bastante as minhas comidas, começaram a pedir para que eu preparasse alguns
+                                pratos para eles com mais frequência, devido a rotina de trabalho puxada.
+                                Esses pedidos foram aumentando, e foi assim que tudo começou. A partir desse incentivo,
+                                percebi que poderia transformar essa paixão em algo maior e dividir meu trabalho com
+                                outras pessoas.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <img src="src/images/Ana.jpeg" id="aboutme_chef" alt="">
+        </section>
+    </main>
+
+    <footer>
+        <img src="src/images/wave.svg" alt="">
+
+        <div id="footer_items">
+            <span id="copyright">
+                &copy Marmitana
+            </span>
+
+            <div class="social-media-buttons">
+                <a href="https://wa.me/5513991845634" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="src/javascript/script.js"></script>
+</body>
+
+</html>
