@@ -14,9 +14,9 @@ Uma landing page responsiva da Marmitana, construída com HTML, CSS e JavaScript
 
 
 ## 🛠️ Nomes dos Integrantes
-Beatriz Batista Santos
-Beatriz Giovanna Moraes dos Santos
-Danilo Costa dos Santos
-Kawan Weber Nascimento Brito
-Leonardo Sacramento dos Santos
-Luan Guilherme da Cruz Menezes
+-Beatriz Batista Santos
+-Beatriz Giovanna Moraes dos Santos
+-Danilo Costa dos Santos
+-Kawan Weber Nascimento Brito
+-Leonardo Sacramento dos Santos
+-Luan Guilherme da Cruz Menezes
