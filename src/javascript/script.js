@@ -75,7 +75,6 @@ $(document).ready(function() {
 
 $(document).ready(function () {
 
-    // abrir área de personalização
     $('#btn-personalizar').on('click', function () {
         $('#personalizar-pedido').addClass('active');
         $('html, body').animate({
@@ -83,12 +82,10 @@ $(document).ready(function () {
         }, 500);
     });
 
-    // fechar área de personalização
     $('#btn-fechar-personalizar').on('click', function () {
         $('#personalizar-pedido').removeClass('active');
     });
 
-    // enviar pedido para WhatsApp com os nomes (texto) corretos das opções
     $('#btn-finalizar-whatsapp').on('click', function () {
         const dias = ['segunda', 'terca', 'quarta', 'quinta', 'sexta'];
         const diasNomes = {
