@@ -58,6 +58,18 @@
     gap: 20px;
 }
 
+#dishes+.dish-price {
+    margin-top: 50px;
+}
+
+#dishes+.dish-price>button {
+    padding: 15px;
+}
+
+.dish-image {
+    border-radius: 100%;
+}
+
 a {
     color: white;
     text-decoration: none;
@@ -82,4 +94,4 @@ a {
     #menu .section-subtitle {
         text-align: center;
     }
-} 
+}
