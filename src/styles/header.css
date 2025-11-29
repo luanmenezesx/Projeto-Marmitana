@@ -7,7 +7,7 @@ header {
     z-index: 3;
 }
 
-#navbar {
+header>nav {
     width: 100%;
     display: flex;
     align-items: center;
@@ -15,7 +15,7 @@ header {
     max-height: 50px;
 }
 
-#nav_logo {
+header>nav>img {
     font-size: 24px;
     color: var(--color-primary-6);
     width: 105px;  
@@ -23,7 +23,7 @@ header {
     object-fit: contain;
 }
 
-#nav_list {
+header>nav>ul {
     display: flex;
     list-style: none;
     gap: 48px;
@@ -49,8 +49,7 @@ header {
 }
 
 @media screen and (max-width: 1170px) {
-    #nav_list,
-    #navbar .btn-default {
+    header>nav>ul, #navbar .btn-default {
         display: none;
     }
 
