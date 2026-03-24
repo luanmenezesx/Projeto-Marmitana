@@ -48,6 +48,25 @@ header>nav>ul {
     display: none;
 }
 
+.font-buttons {
+    display: flex;
+    gap: 6px;
+}
+
+.font-buttons button {
+    padding: 6px 10px;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.font-buttons button:hover {
+    background-color: #f2f2f2;
+}
+
 @media screen and (max-width: 1170px) {
     header>nav>ul, #navbar .btn-default {
         display: none;
