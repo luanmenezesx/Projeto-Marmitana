@@ -56,9 +56,7 @@
     justify-content: end;
     width: 70%;
     z-index: 2;
-    background: url("src/images/hero.png");
-    background-height: 100%;
-    background-width: fit-content;
+    content: url("src/images/hero.png");
 }
 
 .shape {
