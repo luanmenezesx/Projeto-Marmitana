@@ -128,4 +128,22 @@ $(document).ready(function () {
         window.open(url, '_blank');
     });
 
+    
+    let fontSize = 100;
+
+    $('#increase-font').click(function () {
+        if (fontSize < 150) { // limite máximo
+            fontSize += 10;
+            $('html').css('font-size', fontSize + '%');
+        }
+    });
+
+    $('#decrease-font').click(function () {
+        if (fontSize > 70) { // limite mínimo
+            fontSize -= 10;
+            $('html').css('font-size', fontSize + '%');
+        }
+    });
+    
+    
 });
