@@ -71,8 +71,8 @@
 }
 
 a {
-    color: white;
-    text-decoration: none;
+    color: #000000; 
+    font-weight: bold;
 }
 
 @media screen and (max-width: 1170px) {
