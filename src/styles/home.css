@@ -56,7 +56,11 @@
     justify-content: end;
     width: 70%;
     z-index: 2;
-    content: url("src/images/hero.png");
+}
+
+#banner img {
+    height: 100%;
+    width: fit-content;
 }
 
 .shape {
