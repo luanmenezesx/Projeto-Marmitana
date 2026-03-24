@@ -14,7 +14,7 @@
     --color-primary-4: #ffe100;
     --color-primary-5: #ffcb45;
     --color-primary-6: #7a5c00;
-    --color-whatsapp: #25d366;
+    --color-whatsapp: #2edf75;
 
     --color-neutral-0: #fff;
     --color-neutral-1: #1d1d1d;
@@ -59,6 +59,8 @@ section {
     align-items: center;
     justify-content: center;
     background-color: var(--color-whatsapp);
+    color: #000000; 
+    font-weight: bold;
     border-radius: 12px;
     padding: 10px 14px;
     font-weight: 600;
