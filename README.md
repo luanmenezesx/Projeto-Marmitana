@@ -4,6 +4,10 @@ Uma landing page responsiva da Marmitana, construída com HTML, CSS e JavaScript
 
 ## 🛠️ Tecnologias Utilizadas
 
+https://luanmenezesx.github.io/Projeto-Marmitana/
+
+## 🛠️ Tecnologias Utilizadas
+
 - **HTML5**: Marcação semântica
 - **CSS3**: Estilização
 - **JavaScript**: Funcionalidade interativa
