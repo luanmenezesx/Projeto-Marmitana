@@ -2,7 +2,7 @@
 
 Uma landing page responsiva da Marmitana, construída com HTML, CSS e JavaScript. Este projeto apresenta um design limpo com animações suaves.
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Link do Site
 
 https://luanmenezesx.github.io/Projeto-Marmitana/
 
