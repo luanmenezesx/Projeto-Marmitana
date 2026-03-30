@@ -40,6 +40,10 @@
     background-color: var(--color-primary-2);
 }
 
+#btn-fechar-personalizar>i>p {
+    display: none;
+}
+
 .dias-container {
     display: flex;
     flex-direction: column;
