@@ -15,6 +15,13 @@ header>nav {
     max-height: 50px;
 }
 
+header>nav>h1 {
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+    padding: 0;
+}
+
 header>nav>h1>img {
     font-size: 24px;
     color: var(--color-primary-6);
