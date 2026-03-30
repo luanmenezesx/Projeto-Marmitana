@@ -51,6 +51,10 @@ header>nav>ul {
     display: none;
 }
 
+#mobile_btn>i>p {
+    display: none;
+}
+
 #mobile_menu {
     display: none;
 }
