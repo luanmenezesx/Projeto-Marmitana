@@ -63,7 +63,7 @@
     font-weight: 600;
     color: var(--color-primary-6);
     margin-bottom: 10px;
-    display: block;
+    display: inline;
 }
 
 .selects-container {
