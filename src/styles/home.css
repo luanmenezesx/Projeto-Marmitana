@@ -2,14 +2,19 @@
     display: flex;
     min-height: calc(100vh - 91px);
     position: relative;
+    overflow: hidden;
 }
 
 #cta {
+    position: relative;
     width: 35%;
     display: flex;
     flex-direction: column;
     gap: 28px;
     margin-top: 5%;
+    z-index: 1;
+    max-width: 600px;
+    padding: 2rem;
 }
 
 #cta .title {
@@ -51,16 +56,18 @@
 }
 
 #banner {
-    display: flex;
+    right: 0;
+    top: 0;
+    /*display: flex;
     align-items: start;
-    justify-content: end;
+    justify-content: end;*/
     width: 70%;
-    z-index: 2;
-}
+    z-index: -1;
 
-#banner img {
-    height: 100%;
-    width: fit-content;
+    background-image: url('../images/hero.png');
+    background-size: contain;    
+    background-repeat: no-repeat;
+    background-position: right top;
 }
 
 .shape {
@@ -71,7 +78,7 @@
     border-radius: 65% 65% 0% 65%;
     top: 0;
     right: 0;
-    z-index: 1;
+    z-index: -2;
 }
 
 @media screen and (max-width: 1170px) {
@@ -81,9 +88,10 @@
     }
 
     #banner,
-    #banner img,
     #home .shape {
-        display: none;
+        width: 100%;
+        height: 40vh;
+        display: contents;
     }
 
     #cta {

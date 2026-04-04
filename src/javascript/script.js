@@ -86,8 +86,54 @@ $(document).ready(function () {
         $('#personalizar-pedido').removeClass('active');
     });
 
-    $('#btn-finalizar-whatsapp').on('click', function () {
+    $('#personalizar-pedido').on('submit', function (e) {
+        e.preventDefault();
+
+        const form = this;
+    
+        if (!form.checkValidity()) {
+            form.reportValidity();
+            return; 
+        }
+    
         const dias = ['segunda', 'terca', 'quarta', 'quinta', 'sexta'];
+        const diasNomes = {
+            'segunda': 'Segunda-feira',
+            'terca': 'Terça-feira',
+            'quarta': 'Quarta-feira',
+            'quinta': 'Quinta-feira',
+            'sexta': 'Sexta-feira'
+        };
+    
+        let linhas = [];
+    
+        dias.forEach(function (dia) {
+            const $prato = $(`#prato-${dia}`);
+            const $comp = $(`#complemento-${dia}`);
+    
+            const pratoText = $prato.find('option:selected').text().trim();
+            const compText = $comp.find('option:selected').text().trim();
+    
+            if ($prato.val() || $comp.val()) {
+                let bloco = `*${diasNomes[dia]}*\n`;
+                bloco += $prato.val() ? `Prato: ${pratoText}\n` : `Prato: —\n`;
+                bloco += $comp.val() ? `Complemento: ${compText}\n` : `Complemento: —\n`;
+                linhas.push(bloco);
+            }
+        });
+    
+        if (linhas.length === 0) {
+            alert('Por favor, selecione pelo menos um prato ou complemento.');
+            return;
+        }
+    
+        let mensagem = '🍽️ *Pedido Semanal - Marmitana* \n\n' + linhas.join('\n');
+        const numeroWhats = '5513991845634';
+        const url = `https://wa.me/${numeroWhats}?text=${encodeURIComponent(mensagem)}`;
+    
+        window.open(url, '_blank');
+    });
+       /* const dias = ['segunda', 'terca', 'quarta', 'quinta', 'sexta'];
         const diasNomes = {
             'segunda': 'Segunda-feira',
             'terca': 'Terça-feira',
@@ -126,7 +172,7 @@ $(document).ready(function () {
         const url = `https://wa.me/${numeroWhats}?text=${encodeURIComponent(mensagem)}`;
 
         window.open(url, '_blank');
-    });
+    });*/
 
     
     let fontSize = 100;
