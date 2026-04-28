@@ -54,13 +54,10 @@
 #phone_button button {
     box-shadow: none;
 }
-
+/*
 #banner {
     right: 0;
     top: 0;
-    /*display: flex;
-    align-items: start;
-    justify-content: end;*/
     width: 70%;
     z-index: -1;
 
@@ -68,6 +65,22 @@
     background-size: contain;    
     background-repeat: no-repeat;
     background-position: right top;
+}
+*/
+
+#banner {
+    right: 0;
+    top: 0;
+    width: 70%;
+
+    background-image: url('../images/hero.png');
+    background-size: contain;    
+    background-repeat: no-repeat;
+    background-position: right top;
+
+    animation: float 5s ease-in-out infinite;
+
+    z-index: -1; 
 }
 
 .shape {
@@ -104,5 +117,17 @@
 @media screen and (max-width: 450px) {
     #phone_button button {
         display: none;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-25px) rotate(1deg);
+    }
+    100% {
+        transform: translateY(0px) rotate(0deg);
     }
 }
