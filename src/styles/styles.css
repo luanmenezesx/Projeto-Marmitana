@@ -33,6 +33,10 @@ html {
 
 body {
     background-color: var(--color-primary-1);
+    line-height: 1.5;
+    margin-bottom: 2em;
+    letter-spacing: 0.12em;
+    word-spacing: 0.16em;
 }
 
 section {
