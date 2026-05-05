@@ -107,3 +107,28 @@ section {
 .fa-whatsapp {
     overflow:hidden;
 }
+
+:focus-visible {
+  outline: 3px solid #ffe100;
+  outline-offset: 3px;
+  position: relative;
+  z-index: 10;
+  
+}
+
+:focus {
+  scroll-margin-top: 80px;
+}
+
+main {
+  scroll-margin-top: 80px;
+}
+
+
+header, nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+ 
+}
