@@ -22,8 +22,8 @@
     gap: 18px;
     width: 25%;
     padding: 20px;
-    background-color: var(--color-neutral-0);
-    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--surface-1);
+    box-shadow: var(--shadow-soft);
     position: relative;
     overflow: hidden;
 }
@@ -44,7 +44,7 @@
 }
 
 .dish-description {
-    color: #434343;
+    color: var(--text-muted);
     text-align: center;
 }
 
@@ -71,7 +71,7 @@
 }
 
 a {
-    color: #000000; 
+    color: var(--text-color);
     font-weight: bold;
 }
 

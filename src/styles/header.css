@@ -3,7 +3,7 @@ header {
     padding: 28px 8%;
     position: sticky;
     top: 0;
-    background-color: var(--color-primary-1);
+    background-color: var(--header-bg);
     z-index: 3;
 }
 
@@ -25,8 +25,8 @@ header>nav>h1 {
 header>nav>h1>img {
     font-size: 24px;
     color: var(--color-primary-6);
-    width: 105px;  
-    height: auto;  
+    width: 105px;
+    height: auto;
     object-fit: contain;
 }
 
@@ -38,17 +38,18 @@ header>nav>ul {
 
 .nav-item a {
     text-decoration: none;
-    color: #1d1d1dad;
+    color: var(--nav-link-color);
     font-weight: 600;
 }
 
 .nav-item.active a {
-    color: var(--color-neutral-1);
+    color: var(--text-color);
     border-bottom: 3px solid var(--color-primary-4);
 }
 
 #mobile_btn {
     display: none;
+    color: var(--text-color);
 }
 
 #mobile_btn>i>p {
@@ -57,17 +58,20 @@ header>nav>ul {
 
 #mobile_menu {
     display: none;
+    background-color: var(--header-bg);
 }
 
 .font-buttons {
     display: flex;
     gap: 6px;
+    align-items: center;
 }
 
 .font-buttons button {
     padding: 6px 10px;
     border: none;
-    background-color: #ffffff;
+    background-color: var(--surface-1);
+    color: var(--text-color);
     cursor: pointer;
     font-weight: bold;
     border-radius: 4px;
@@ -75,7 +79,22 @@ header>nav>ul {
 }
 
 .font-buttons button:hover {
-    background-color: #f2f2f2;
+    background-color: var(--surface-2);
+}
+
+#toggle-theme {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: var(--theme-btn-bg);
+    color: var(--theme-btn-text);
+    transition: 0.3s;
+}
+
+#toggle-theme:hover {
+    transform: scale(1.05);
 }
 
 @media screen and (max-width: 1170px) {

@@ -191,5 +191,29 @@ $(document).ready(function () {
         }
     });
     
-    
+    const $themeButton = $('#toggle-theme');
+
+function updateThemeIcon() {
+    const isDark = $('body').hasClass('dark-theme');
+    const $icon = $themeButton.find('i');
+
+    $icon.removeClass('fa-moon fa-sun');
+
+    if (isDark) {
+        $icon.addClass('fa-sun');
+        document.getElementById('logodark').innerHTML = '<img src="src/images/Marmitana-modoescuro.png" alt="Logo da Marmitana Culinária Brasileira">';
+
+    } else {
+        $icon.addClass('fa-moon');
+                document.getElementById('logodark').innerHTML = '<img src="src/images/Marmitana.png" alt="Logo da Marmitana Culinária Brasileira">';
+
+    }
+}
+
+$themeButton.on('click', function () {
+    $('body').toggleClass('dark-theme');
+    updateThemeIcon();
+});
+
+updateThemeIcon();
 });

@@ -32,15 +32,16 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    background-color: var(--color-neutral-0);
+    background-color: var(--surface-1);
     padding: 12px;
     border-radius: 12px;
-    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-soft);
 }
 
 .text-content p {
     display: flex;
     justify-content: space-between;
+    color: var(--text-color);
 }
 
 @media screen and (max-width: 1170px) {
@@ -48,7 +49,6 @@
         flex-direction: column;
     }
 
-    
     #aboutme_chef {
         display: none;
     }
@@ -78,4 +78,4 @@
     .text {
         flex-direction: column;
     }
-} 
+}

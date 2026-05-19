@@ -19,7 +19,7 @@
 
 #cta .title {
     font-size: 4rem;
-    color: var(--color-neutral-1);;
+    color: var(--text-color);
 }
 
 #cta .title span {
@@ -28,6 +28,7 @@
 
 #cta .description {
     font-size: 1.2rem;
+    color: var(--text-muted);
 }
 
 #cta_buttons {
@@ -37,54 +38,40 @@
 
 #cta_buttons a {
     text-decoration: none;
-    color: var(--color-neutral-1);;
+    color: var(--text-color);
 }
 
 #phone_button {
     display: flex;
     gap: 8px;
     align-items: center;
-    background-color: #ffffff;
+    background-color: var(--surface-1);
     padding: 8px 14px;
     font-weight: 500;
-    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-soft);
     border-radius: 12px;
+    color: var(--text-color);
 }
 
 #phone_button button {
     box-shadow: none;
+    color: inherit;
 }
-/*
-#banner {
-    right: 0;
-    top: 0;
-    width: 70%;
-    z-index: -1;
-
-    background-image: url('../images/hero.png');
-    background-size: contain;    
-    background-repeat: no-repeat;
-    background-position: right top;
-}
-*/
 
 #banner {
     right: 0;
     top: 0;
     width: 70%;
-
     background-image: url('../images/hero.png');
-    background-size: contain;    
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: right top;
-
     animation: float 5s ease-in-out infinite;
-
-    z-index: -1; 
+    z-index: -1;
 }
 
 .shape {
-    background-color: var(--color-primary-2);
+    background-color: var(--shape-bg);
     width: 50%;
     height: 100%;
     position: absolute;
