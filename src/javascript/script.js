@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     $('#mobile_btn').on('click', function () {
         $('#mobile_menu').toggleClass('active');
         $('#mobile_btn').find('i').toggleClass('fa-x');
@@ -19,10 +19,10 @@ $(document).ready(function() {
             header.css('box-shadow', '5px 1px 5px rgba(0, 0, 0, 0.1');
         }
 
-        sections.each(function(i) {
+        sections.each(function (i) {
             const section = $(this);
             const sectionTop = section.offset().top - 96;
-            const sectionBottom = sectionTop+ section.outerHeight();
+            const sectionBottom = sectionTop + section.outerHeight();
 
             if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
                 activeSectionIndex = i;
@@ -90,12 +90,12 @@ $(document).ready(function () {
         e.preventDefault();
 
         const form = this;
-    
+
         if (!form.checkValidity()) {
             form.reportValidity();
-            return; 
+            return;
         }
-    
+
         const dias = ['segunda', 'terca', 'quarta', 'quinta', 'sexta'];
         const diasNomes = {
             'segunda': 'Segunda-feira',
@@ -104,16 +104,16 @@ $(document).ready(function () {
             'quinta': 'Quinta-feira',
             'sexta': 'Sexta-feira'
         };
-    
+
         let linhas = [];
-    
+
         dias.forEach(function (dia) {
             const $prato = $(`#prato-${dia}`);
             const $comp = $(`#complemento-${dia}`);
-    
+
             const pratoText = $prato.find('option:selected').text().trim();
             const compText = $comp.find('option:selected').text().trim();
-    
+
             if ($prato.val() || $comp.val()) {
                 let bloco = `*${diasNomes[dia]}*\n`;
                 bloco += $prato.val() ? `Prato: ${pratoText}\n` : `Prato: —\n`;
@@ -121,60 +121,60 @@ $(document).ready(function () {
                 linhas.push(bloco);
             }
         });
-    
+
         if (linhas.length === 0) {
             alert('Por favor, selecione pelo menos um prato ou complemento.');
             return;
         }
-    
+
         let mensagem = '🍽️ *Pedido Semanal - Marmitana* \n\n' + linhas.join('\n');
         const numeroWhats = '5513991845634';
         const url = `https://wa.me/${numeroWhats}?text=${encodeURIComponent(mensagem)}`;
-    
+
         window.open(url, '_blank');
     });
-       /* const dias = ['segunda', 'terca', 'quarta', 'quinta', 'sexta'];
-        const diasNomes = {
-            'segunda': 'Segunda-feira',
-            'terca': 'Terça-feira',
-            'quarta': 'Quarta-feira',
-            'quinta': 'Quinta-feira',
-            'sexta': 'Sexta-feira'
-        };
+    /* const dias = ['segunda', 'terca', 'quarta', 'quinta', 'sexta'];
+     const diasNomes = {
+         'segunda': 'Segunda-feira',
+         'terca': 'Terça-feira',
+         'quarta': 'Quarta-feira',
+         'quinta': 'Quinta-feira',
+         'sexta': 'Sexta-feira'
+     };
 
-        let linhas = [];
+     let linhas = [];
 
-        dias.forEach(function (dia) {
-            const $prato = $(`#prato-${dia}`);
-            const $comp = $(`#complemento-${dia}`);
+     dias.forEach(function (dia) {
+         const $prato = $(`#prato-${dia}`);
+         const $comp = $(`#complemento-${dia}`);
 
-            const pratoVal = $prato.val();
-            const compVal = $comp.val();
+         const pratoVal = $prato.val();
+         const compVal = $comp.val();
 
-            const pratoText = pratoVal ? $prato.find('option:selected').text().trim() : '';
-            const compText = compVal ? $comp.find('option:selected').text().trim() : '';
+         const pratoText = pratoVal ? $prato.find('option:selected').text().trim() : '';
+         const compText = compVal ? $comp.find('option:selected').text().trim() : '';
 
-            if (pratoText || compText) {
-                let bloco = `*${diasNomes[dia]}*\n`;
-                bloco += pratoText ? `Prato: ${pratoText}\n` : `Prato: —\n`;
-                bloco += compText ? `Complemento: ${compText}\n` : `Complemento: —\n`;
-                linhas.push(bloco);
-            }
-        });
+         if (pratoText || compText) {
+             let bloco = `*${diasNomes[dia]}*\n`;
+             bloco += pratoText ? `Prato: ${pratoText}\n` : `Prato: —\n`;
+             bloco += compText ? `Complemento: ${compText}\n` : `Complemento: —\n`;
+             linhas.push(bloco);
+         }
+     });
 
-        if (linhas.length === 0) {
-            alert('Por favor, selecione pelo menos um prato ou complemento antes de finalizar.');
-            return;
-        }
+     if (linhas.length === 0) {
+         alert('Por favor, selecione pelo menos um prato ou complemento antes de finalizar.');
+         return;
+     }
 
-        let mensagem = '🍽️ *Pedido Semanal - Marmitana* \n\n' + linhas.join('\n');
-        const numeroWhats = '5513991845634';
-        const url = `https://wa.me/${numeroWhats}?text=${encodeURIComponent(mensagem)}`;
+     let mensagem = '🍽️ *Pedido Semanal - Marmitana* \n\n' + linhas.join('\n');
+     const numeroWhats = '5513991845634';
+     const url = `https://wa.me/${numeroWhats}?text=${encodeURIComponent(mensagem)}`;
 
-        window.open(url, '_blank');
-    });*/
+     window.open(url, '_blank');
+ });*/
 
-    
+
     let fontSize = 100;
 
     $('#increase-font').click(function () {
@@ -190,30 +190,39 @@ $(document).ready(function () {
             $('html').css('font-size', fontSize + '%');
         }
     });
-    
+
     const $themeButton = $('#toggle-theme');
 
-function updateThemeIcon() {
-    const isDark = $('body').hasClass('dark-theme');
-    const $icon = $themeButton.find('i');
+    function updateThemeIcon() {
+        const isDark = $('body').hasClass('dark-theme');
+        const $icon = $themeButton.find('i');
 
-    $icon.removeClass('fa-moon fa-sun');
+        $icon.removeClass('fa-moon fa-sun');
 
-    if (isDark) {
-        $icon.addClass('fa-sun');
-        document.getElementById('logodark').innerHTML = '<img src="src/images/Marmitana-modoescuro.png" alt="Logo da Marmitana Culinária Brasileira">';
+        if (isDark) {
+            $icon.addClass('fa-sun');
+            document.getElementById('logodark').innerHTML = '<img src="src/images/Marmitana-modoescuro.png" alt="Logo da Marmitana Culinária Brasileira">';
 
-    } else {
-        $icon.addClass('fa-moon');
-                document.getElementById('logodark').innerHTML = '<img src="src/images/Marmitana.png" alt="Logo da Marmitana Culinária Brasileira">';
+        } else {
+            $icon.addClass('fa-moon');
+            document.getElementById('logodark').innerHTML = '<img src="src/images/Marmitana.png" alt="Logo da Marmitana Culinária Brasileira">';
 
+        }
     }
-}
 
-$themeButton.on('click', function () {
-    $('body').toggleClass('dark-theme');
+    $themeButton.on('click', function () {
+        $('body').toggleClass('dark-theme');
+        updateThemeIcon();
+    });
+
     updateThemeIcon();
 });
 
-updateThemeIcon();
+document.getElementById('destacar-links').addEventListener('click', function () {
+    const links = document.getElementsByTagName('a');
+
+    for (let i = 0; i < links.length; i++) {
+        links[i].style.backgroundColor = "purple";
+        links[i].style.color = "yellow";
+    }
 });

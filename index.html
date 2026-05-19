@@ -19,7 +19,7 @@
 <body>
     <header>
         <nav>
-            <h1  id="logodark"><img src="src/images/Marmitana.png" alt="Logo da Marmitana Culinária Brasileira"></h1>
+            <h1 id="logodark"><img src="src/images/Marmitana.png" alt="Logo da Marmitana Culinária Brasileira"></h1>
             <ul>
                 <li class="nav-item active"><a href="#home">Início</a></li>
                 <li class="nav-item"><a href="#menu">Cardápio</a></li>
@@ -28,12 +28,16 @@
             </ul>
 
             <div class="font-buttons">
-                <button id="toggle-theme" aria-label="Alterar tema">
+                <button id="toggle-theme" title="mudar tema" aria-label="Alterar tema">
                     <i class="fa-solid fa-moon"></i>
                 </button>
 
-                <button id="increase-font">A+</button>
-                <button id="decrease-font">A-</button>
+                <button id="increase-font" title="aumentar fonte"><i class="fa-solid fa-plus"></i></button>
+                <button id="decrease-font" title="diminuir fonte"><i class="fa-solid fa-minus"></i></button>
+                
+                <button id="destacar-links" title="destacar links">
+                    <i class="fa-solid fa-magnet"></i>
+                </button>
 
             </div>
 
@@ -407,7 +411,7 @@
     </main>
 
     <footer>
-        <img src="src/images/wave.svg" alt="">
+        <img src="src/images/wave.svg" alt="onda ao final da pagina">
         <article id="footer_items">
             <span id="copyright">&copy Marmitana</span>
             <address class="social-media-buttons">
