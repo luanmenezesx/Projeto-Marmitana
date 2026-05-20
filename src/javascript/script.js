@@ -226,3 +226,24 @@ document.getElementById('destacar-links').addEventListener('click', function () 
         links[i].style.color = "yellow";
     }
 });
+
+let linksDestacados = false;
+
+document.getElementById('destacar-links').addEventListener('click', function () {
+
+    const links = document.getElementsByTagName('a');
+
+    linksDestacados = !linksDestacados;
+
+    for (let i = 0; i < links.length; i++) {
+
+        if (linksDestacados) {
+            links[i].style.backgroundColor = "purple";
+            links[i].style.color = "yellow";
+        } else {
+            links[i].style.backgroundColor = "";
+            links[i].style.color = "";
+        }
+
+    }
+});

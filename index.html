@@ -27,19 +27,6 @@
                 <li class="nav-item"><a href="#aboutme">Sobre mim</a></li>
             </ul>
 
-            <div class="font-buttons">
-                <button id="toggle-theme" title="mudar tema" aria-label="Alterar tema">
-                    <i class="fa-solid fa-moon"></i>
-                </button>
-
-                <button id="increase-font" title="aumentar fonte"><i class="fa-solid fa-plus"></i></button>
-                <button id="decrease-font" title="diminuir fonte"><i class="fa-solid fa-minus"></i></button>
-                
-                <button id="destacar-links" title="destacar links">
-                    <i class="fa-solid fa-magnet"></i>
-                </button>
-
-            </div>
 
             <button id="mobile_btn">
                 <i class="fa-solid fa-bars">
@@ -333,6 +320,43 @@
                 </div>
             </form>
         </section>
+
+        <div class="menuAcessibilidade" id="menuAcessibilidade">
+
+            <div class="main-btn" id="toggleBtn">
+                <img src="/src/images/btnAcessibilidade.png" alt="">
+            </div>
+        
+            <div class="submenuAcessibilidade">
+        
+                <button id="toggle-theme" title="mudar tema" aria-label="Alterar tema">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+        
+                <button id="increase-font" title="aumentar fonte">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+        
+                <button id="decrease-font" title="diminuir fonte">
+                    <i class="fa-solid fa-minus"></i>
+                </button>
+        
+                <button id="destacar-links" title="destacar links">
+                    <i class="fa-solid fa-magnet"></i>
+                </button>
+        
+            </div>
+        
+        </div>
+
+        <script>
+            const toggleBtn = document.getElementById('toggleBtn');
+            const menuAcessibilidade = document.getElementById('menuAcessibilidade');
+        
+            toggleBtn.addEventListener('click', () => {
+                menuAcessibilidade.classList.toggle('active');
+            });
+        </script>
 
         <section id="testimonials">
             <div id="testimonials_content">
