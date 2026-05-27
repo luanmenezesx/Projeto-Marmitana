@@ -326,33 +326,40 @@
             <div class="main-btn" id="toggleBtn">
                 <img src="/src/images/btnAcessibilidade.png" alt="">
             </div>
-        
+
             <div class="submenuAcessibilidade">
-        
+
                 <button id="toggle-theme" title="mudar tema" aria-label="Alterar tema">
                     <i class="fa-solid fa-moon"></i>
                 </button>
-        
+
                 <button id="increase-font" title="aumentar fonte">
                     <i class="fa-solid fa-plus"></i>
                 </button>
-        
+
                 <button id="decrease-font" title="diminuir fonte">
                     <i class="fa-solid fa-minus"></i>
                 </button>
-        
+
                 <button id="destacar-links" title="destacar links">
                     <i class="fa-solid fa-magnet"></i>
                 </button>
-        
+
+                <button id="contraste-btn" title="Contraste de Cores">
+                    <i class="fa-solid fa-circle-half-stroke"></i> </button>
+
+                <button id="resetar-edicoes" title="Resetar Edições">
+                    <i class="fa-solid fa-arrow-rotate-left"></i>
+                </button>
+
             </div>
-        
+
         </div>
 
         <script>
             const toggleBtn = document.getElementById('toggleBtn');
             const menuAcessibilidade = document.getElementById('menuAcessibilidade');
-        
+
             toggleBtn.addEventListener('click', () => {
                 menuAcessibilidade.classList.toggle('active');
             });

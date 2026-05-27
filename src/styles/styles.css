@@ -154,3 +154,75 @@ a {
 .fa-whatsapp {
     overflow: hidden;
 }
+
+
+
+body.autoContraste {
+    /* =========================
+       PALETA ALTO CONTRASTE
+       PRETO + AMARELO
+    ========================== */
+
+    --color-primary-1: #000000;
+    --color-primary-2: #111111;
+    --color-primary-3: #000000;
+    --color-primary-4: #ffea00;
+    --color-primary-5: #ffea00;
+    --color-primary-6: #ffea00;
+
+    --color-whatsapp: #ffea00;
+
+    --color-neutral-0: #000000;
+    --color-neutral-1: #ffea00;
+
+    /* =========================
+       LAYOUT
+    ========================== */
+
+    --bg-page: #000000;
+    --header-bg: #000000;
+
+    --surface-1: #000000;
+    --surface-2: #111111;
+    --surface-3: #1a1a1a;
+
+    /* =========================
+       TEXTO
+    ========================== */
+
+    --text-color: #ffea00;
+    --text-muted: #ffea00;
+
+    --nav-link-color: #ffea00;
+
+    /* =========================
+       BORDAS
+    ========================== */
+
+    --border-color: #ffea00;
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    --footer-bg: #000000;
+    --footer-text: #ffea00;
+
+    /* =========================
+       ELEMENTOS VISUAIS
+    ========================== */
+
+    --shape-bg: #111111;
+
+    --shadow-soft: 0px 0px 0px 2px #ffea00;
+    --shadow-soft-hover: 0px 0px 0px 4px #ffea00;
+
+    /* =========================
+       BOTÕES
+    ========================== */
+
+    --theme-btn-bg: #000000;
+    --theme-btn-text: #ffea00;
+
+    --whatsapp-text: #000000;
+}

@@ -247,3 +247,17 @@ document.getElementById('destacar-links').addEventListener('click', function () 
 
     }
 });
+
+
+document.getElementById('contraste-btn').addEventListener('click', function () {
+    document.body.classList.toggle('autoContraste');
+    document.body.classList.remove('dark-theme');
+
+    // opcional: feedback visual no console
+    console.log(
+        document.body.classList.contains('autoContraste')
+            ? 'Auto contraste ATIVADO'
+            : 'Auto contraste DESATIVADO'
+    );
+});
+
