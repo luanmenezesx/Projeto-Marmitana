@@ -1,3 +1,5 @@
+    let fontSize = 100;
+
 $(document).ready(function () {
     $('#mobile_btn').on('click', function () {
         $('#mobile_menu').toggleClass('active');
@@ -175,7 +177,6 @@ $(document).ready(function () {
  });*/
 
 
-    let fontSize = 100;
 
     $('#increase-font').click(function () {
         if (fontSize < 150) { // limite máximo
@@ -261,3 +262,34 @@ document.getElementById('contraste-btn').addEventListener('click', function () {
     );
 });
 
+$('#resetar-edicoes').on('click', function () {
+
+    // 1. Reset tamanho da fonte
+    fontSize = 100;
+    $('html').css('font-size', '100%');
+
+    // 2. Remove modo escuro
+    $('body').removeClass('dark-theme');
+
+    // 3. Remove alto contraste
+    $('body').removeClass('autoContraste');
+
+    // 4. Reset links destacados
+    linksDestacados = false;
+    const links = document.getElementsByTagName('a');
+
+    for (let i = 0; i < links.length; i++) {
+        links[i].style.backgroundColor = "";
+        links[i].style.color = "";
+    }
+
+    // 5. Reset ícone do tema (moon/sun + logo)
+    const $icon = $('#toggle-theme').find('i');
+
+    $icon.removeClass('fa-sun fa-moon').addClass('fa-moon');
+
+    document.getElementById('logodark').innerHTML =
+        '<img src="src/images/Marmitana.png" alt="Logo da Marmitana Culinária Brasileira">';
+
+    console.log('Reset de acessibilidade aplicado');
+});
