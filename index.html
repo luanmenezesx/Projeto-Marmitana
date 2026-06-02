@@ -462,24 +462,4 @@
         menuAcessibilidade.classList.toggle('active');
     });
 </script>
-
-<script>
-    const submenuButtons = document.querySelectorAll('.submenuAcessibilidade button');
-        
-    function abrirMenu() {
-        submenuButtons.forEach(btn => {
-            btn.tabIndex = 0;
-        });
-            
-        toggleBtn.setAttribute('aria-expanded', 'true');
-    }
-            
-    function fecharMenu() {
-        submenuButtons.forEach(btn => {
-            btn.tabIndex = -1;
-        });
-            
-        toggleBtn.setAttribute('aria-expanded', 'false');
-    }
-</script>
 </html>
