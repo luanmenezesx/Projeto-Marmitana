@@ -155,7 +155,10 @@ a {
     overflow: hidden;
 }
 
-
+:focus-visible {
+  outline: 3px solid #ffe100;
+  outline-offset: 3px;
+} 
 
 body.autoContraste {
     /* =========================
